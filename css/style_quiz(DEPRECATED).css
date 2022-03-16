@@ -158,7 +158,6 @@ button {
     width: 60%;
     outline: 1px solid red;
 }
-
 .rightButton {
     display: flex;
     flex-direction: row-reverse;
@@ -181,6 +180,7 @@ button {
     background-color: #C5E4CA;
     border-radius: 13px;
     outline: 1px solid red;
+
 }
 .funRunText {
     font-family: Poppins, Helvetica, sans-serif;
@@ -251,6 +251,8 @@ footer {
     padding: 10%;
     outline: 1px solid red;
 }
+
+/* ADD BELOW TO STYLE.CSS AND JUST USE ONE */
 .adoptionQuiz {
     outline: 1px solid red;
 }
@@ -320,6 +322,10 @@ footer {
         /* UPDATE THIS TO HANDLE NAVTABDIV */
         outline: 5px solid red;
     }
+
+
+
+
     .onlyQuestions {
         color: #33103b;
         display: grid;
@@ -328,6 +334,10 @@ footer {
         outline: 1px solid red;
         text-align: right;
     }   
+
+
+
+    
     .footerGrid {
         display: grid;
         grid-template-columns: 1fr 3fr 3fr;

@@ -251,6 +251,56 @@ footer {
     padding: 10%;
     outline: 1px solid red;
 }
+
+.adoptionQuiz {
+    outline: 1px solid red;
+}
+.onlyQuestions {
+    color: #33103b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    outline: 1px solid red;
+    text-align: right;
+}
+.quizButtonDiv {
+    display: flex;
+    flex-direction: reverse;
+    outline: 3px dotted red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    left: 0px;
+    width: 300px;
+    float: right;
+    /* MAKE THIS WORK - needs to be pegged to the right border of the .fullquiz class, I think. Being a real pill about that though. Position: initial on fullQuiz and position: relative on .quizButtonDiv seems to help, but the width gets weird. How to make the 'normal' position be the right edge instead? maybe put them both in another div and have THAT new div be text-align right? */
+    /* of COURSE it was align-items, wow, who did this to me */
+}
+.quizButton {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}
+.rightAlignExperiment {
+    text-align: right;
+}
+.quizQuestion {
+    text-align: left;
+}
+.anotherAlignExperiment {
+    display: flex;
+    flex-direction: column-reverse;
+    outline: 1px solid red;
+    align-items: flex-end;
+}
+.adoptionQuiz {
+    padding: 40px 100px 40px 100px;
+}
+.fullQuiz {
+    outline: 1px solid red;
+}
+
+
 @media only screen and (max-width: 700px){
     /* needs to be a smaller header, and column instead of grid of mulitple columns of cards */
     /* also gotta make the drop-down menu, huh... */
@@ -327,6 +377,14 @@ footer {
         align-items:center;
         outline: 1px solid red;
     }
+    .onlyQuestions {
+        color: #33103b;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        outline: 1px solid red;
+        text-align: right;
+    }   
 }
 .slowlyRotate {
     animation: rotation 5000ms infinite linear;
@@ -348,3 +406,40 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+/* adding batBun spin CSS here */
+.batBun {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: #33103b;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .batBun img {
+    animation: bunSpin 1s linear;
+    width: 60vw;
+  }
+  
+  
+  @keyframes bunSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: rotate(540deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+  }
+  
