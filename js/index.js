@@ -49,3 +49,4 @@ function fade (){
     $(".batBun").fadeOut("slow");
 }
 setTimeout(fade, 550);
+// change FONT when you hover or tap? taht might be fun. 

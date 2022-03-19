@@ -7,12 +7,19 @@ body {
     outline: 1px solid red;
 }
 .logoPurp {
-    width: 10%;
+    width: 20%;
     padding: 1%;
-    /* I don't know why the purple logo is getting huge if I don't keep its width to 10%; it's something about the flex display in the logoTitle class, but I don't know why. its getting bigger than the source image. WAIT IS IT THE PARAGRAPH? removed this: <p class="titleHRRN">House Rabbit Resource Network</p>. Nope it wasn't that. Put it back. */
     outline: 1px solid red;
 }
-.logoTitle, .titleHRRN {
+.titleHRRN {
+    color: #33103B;
+    font-family: Rosario, Times, serif;
+    font-size: 32px;
+    display: flex;
+    align-items: center; 
+    outline: 1px solid red;
+}
+.logoTitle {
     color: #33103B;
     font-family: Rosario, Times, serif;
     font-size: 32px;
@@ -72,9 +79,7 @@ h3 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 70px;
-    /* could probably go back to this and make the links shape to the width of the text, but this is OK. Also could have the vertical line separators feasibly. */
-    /* UPDATE THIS TO HANDLE NAVTABDIV */
-    outline: 5px solid red;
+    outline: 1px solid red;
 }
 .gridLink {
     color: #010101;
@@ -108,7 +113,6 @@ h3 {
     width: 25vw;
     border-radius: 24px;
     outline: 1px solid red;
-    /* I acknowledge that this is a dirty hackjob for now but it's gonna get the job done for the moment. Actually it seems to be better with position: absolute; previously it was this: [transform: translate(67vw, -80px);]. Anyways a media query would be good here to make it not look so bad when it goes to a mobile size viewport. */
     position: absolute;
     left: 70%;
     top: 76%;
@@ -134,7 +138,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 15% 30% 15%;
-    /* (maybe 50% 10% 20% 20% ?) shoudl go image title text button - need to respace this*/
     outline: 1px solid red;
 }
 .cardText {
@@ -273,8 +276,6 @@ footer {
     left: 0px;
     width: 300px;
     float: right;
-    /* MAKE THIS WORK - needs to be pegged to the right border of the .fullquiz class, I think. Being a real pill about that though. Position: initial on fullQuiz and position: relative on .quizButtonDiv seems to help, but the width gets weird. How to make the 'normal' position be the right edge instead? maybe put them both in another div and have THAT new div be text-align right? */
-    /* of COURSE it was align-items, wow, who did this to me */
 }
 .quizButton {
     text-align: center;
@@ -302,9 +303,6 @@ footer {
 
 
 @media only screen and (max-width: 700px){
-    /* needs to be a smaller header, and column instead of grid of mulitple columns of cards */
-    /* also gotta make the drop-down menu, huh... */
-    /* nevermind making it another row below for now */
     .CTAcards {
         display: grid;
         grid-template-columns: 1fr;
@@ -332,8 +330,6 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 50px 60px;
-        /* could probably go back to this and make the links shape to the width of the text, but this is OK. Also could have the vertical line separators feasibly. */
-        /* UPDATE THIS TO HANDLE NAVTABDIV */
         outline: 5px solid red;
     }
     #aboutUs {
@@ -347,7 +343,6 @@ footer {
         width: 25vw;
         border-radius: 24px;
         outline: 1px solid red;
-        /* I acknowledge that this is a dirty hackjob for now but it's gonna get the job done for the moment. Actually it seems to be better with position: absolute; previously it was this: [transform: translate(67vw, -80px);]. Anyways a media query would be good here to make it not look so bad when it goes to a mobile size viewport. */
         position: absolute;
         left: 70%;
         top: 70%;
@@ -385,6 +380,14 @@ footer {
         outline: 1px solid red;
         text-align: right;
     }   
+    .logoTitle {
+        color: #33103B;
+        font-family: Rosario, Times, serif;
+        font-size: 24px;
+        display: flex;
+        align-items: center; 
+        outline: 1px solid red;
+    }
 }
 .slowlyRotate {
     animation: rotation 5000ms infinite linear;

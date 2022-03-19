@@ -9,29 +9,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-        <header class="navigation">
-            <div class="inline-block logoTitle">
-                <img src="images/purp hrrn logo.png" class="logoPurp">
-                <p class="titleHRRN">House Rabbit Resource Network</p>
-                <!-- this did not push last time. Huh. WAIT - caching -->
+
+    <div class="inline-block logoTitle">
+        <a href="index.html">
+        <div class="logoTitle">
+            <img src="images/purp hrrn logo.png" class="logoPurp">
+            <div>House Rabbit Resource Network</div>
+        </div>
+        </a>
+    </div>
+    <header class="navigation">
+        
+        <nav class="inline-block grid-container-nav">
+            <div class="navTabDiv">
+                <div class="navTab gridTab">Learn</div>
+                <div class="navTab gridTab">Adopt</div>
+                <div class="navTab gridTab">Help Out</div>
             </div>
-            <nav class="inline-block grid-container-nav">
-                <!-- Not sure I'm doing this bit right -->
-                <div class="navTabDiv">
-                    <div class="navTab gridTab">Learn</div>
-                    <div class="navTab gridTab">Adopt</div>
-                    <div class="navTab gridTab">Help Out</div>
-                </div>
-                <div class="navLinkDiv">
-                    <a href="/found/" class="navLink gridLink">Found a Bunny?</a>
-                    <a href="/boutique /" class="navLink gridLink">Bunny Boutique</a>
-                    <a href="/about/" class="navLink gridLink">About Us</a>
-                    <a href="/archive/" class="navLink gridLink">Archive</a>
-                    <a href="/contact/" class="navLink gridLink">Contact Us</a>
-                </div>
-            </nav>
-        </header>
+            <div class="navLinkDiv">
+                <a href="/found/" class="navLink gridLink">Found a Bunny?</a>
+                <a href="/boutique /" class="navLink gridLink">Bunny Boutique</a>
+                <a href="/about/" class="navLink gridLink">About Us</a>
+                <a href="/archive/" class="navLink gridLink">Archive</a>
+                <a href="/contact/" class="navLink gridLink">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
         <section class="adoptionQuiz">
             <h2>Is Rabbit Ownership Right For Me? - Quiz</h2>
             <div class="rightAlignExperiment">
