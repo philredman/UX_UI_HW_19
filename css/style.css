@@ -375,7 +375,7 @@ footer {
     justify-content: center;
   }
   .batBun img {
-    animation: bunSpin 600ms linear;
+    animation: bunSpin 850ms linear;
     transition: all;
     width: 60vw;
   }
@@ -386,19 +386,20 @@ footer {
   
 @keyframes bunSpin {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(0.1);
+        transform: scale(0.1);
     }
     25% {
-        transform: rotate(180deg);
+        transform: rotate(180deg) scale(0.5);
     }
     50% {
-        transform: rotate(360deg);
+        transform: rotate(360deg) scale(1.0);
     }
     75% {
-        transform: rotate(540deg);
+        transform: rotate(540deg) scale(0.5);
     }
     to {
-        transform: rotate(720deg);
+        transform: rotate(720deg) scale(0.1);
     }
   }
 
